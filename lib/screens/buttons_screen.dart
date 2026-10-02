@@ -41,6 +41,26 @@ class ButtonsScreen extends StatelessWidget {
             ElevatedButton(onPressed: (){}, child: Text('Boton elevado')),
             SizedBox(height: 10),
             ElevatedButton(onPressed: (){}, child: Icon(Icons.deck_rounded)),
+            SizedBox(height: 10),
+            Material(
+              color: const Color.fromARGB(0, 185, 103, 103),
+              child: Ink(
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color.fromARGB(255, 194, 82, 125), Color.fromARGB(255, 57, 61, 85)],
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: InkWell(
+                  onTap: (){},
+                  borderRadius: BorderRadius.circular(12),
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    child: Text('Boton degradado', style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       )
