@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget/models/menu-option.dart';
+import 'package:flutter_widget/models/menu_option.dart';
 import 'package:flutter_widget/screens/buttons_screen.dart';
 import 'package:flutter_widget/screens/cards_screen.dart';
 import 'package:flutter_widget/screens/column_rows_screen.dart';

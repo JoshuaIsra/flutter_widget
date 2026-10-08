@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget/app_Routes.dart';
+import 'package:flutter_widget/app_routes.dart';
 import 'package:flutter_widget/screens/buttons_screen.dart';
 import 'package:flutter_widget/screens/cards_screen.dart';
 import 'package:flutter_widget/screens/column_rows_screen.dart';
