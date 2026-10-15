@@ -8,8 +8,6 @@ class ColumnRowsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Columns & Rows'),
-        backgroundColor: const Color.fromARGB(255, 181, 63, 63),
-        foregroundColor: Colors.white,
       ),
       body: const Placeholder(),
     );

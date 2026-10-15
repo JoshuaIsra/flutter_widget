@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/theme/app_colors.dart';
 
 class ButtonsScreen extends StatelessWidget {
   const ButtonsScreen({super.key});
@@ -11,8 +12,6 @@ class ButtonsScreen extends StatelessWidget {
       },child: Icon(Icons.arrow_back) ),
       appBar: AppBar(
         title: const Text('Buttons'),
-        backgroundColor: const Color.fromARGB(255, 57, 61, 85),
-        foregroundColor: Colors.white,
       ),
       body:Center(
         child: Column(        
@@ -21,7 +20,7 @@ class ButtonsScreen extends StatelessWidget {
             TextButton(onPressed: (){}, child: const Text('Click me'),),          
             FilledButton(onPressed: (){}, child: const Text('Boton relleno')),
             SizedBox(height: 10),
-            OutlinedButton(style:TextButton.styleFrom(backgroundColor: Color.fromARGB(255, 194, 82, 125)),
+            OutlinedButton(style:TextButton.styleFrom(backgroundColor: AppColors.rojo, foregroundColor: Colors.white),
             onPressed: (){}, child: const Text('Boton con borde')),
             SizedBox(height: 10),
             IconButton(onPressed: (){}, icon: Icon(Icons.ac_unit)),
@@ -43,11 +42,11 @@ class ButtonsScreen extends StatelessWidget {
             ElevatedButton(onPressed: (){}, child: Icon(Icons.deck_rounded)),
             SizedBox(height: 10),
             Material(
-              color: const Color.fromARGB(0, 185, 103, 103),
+              color: Colors.transparent,
               child: Ink(
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
-                    colors: [Color.fromARGB(255, 194, 82, 125), Color.fromARGB(255, 57, 61, 85)],
+                    colors: [AppColors.verde, AppColors.rojo],
                   ),
                   borderRadius: BorderRadius.circular(12),
                 ),

@@ -8,8 +8,6 @@ class CardsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Cards'),
-        backgroundColor: const Color.fromARGB(255, 148, 63, 181),
-        foregroundColor: Colors.white,
       ),
       body: const SingleChildScrollView(
         child: Column(
