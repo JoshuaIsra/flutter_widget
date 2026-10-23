@@ -26,6 +26,7 @@ class CardsScreen extends StatelessWidget {
             VillanCard(),
             CardProduct(),
             CardHelado(),
+            CardFavorito(),
           ],
         ),
       ),
@@ -231,6 +232,128 @@ class _CardHeladoState extends State<CardHelado> {
                             })
                         : null,
                     child: const Text('Pagar'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+}
+
+class CardFavorito extends StatelessWidget {
+  const CardFavorito({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.all(12),
+      elevation: 5,
+      child: Column(
+        children: [
+          ClipRRect(
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(40),
+              topRight: Radius.circular(40),
+              bottomLeft: Radius.circular(40),
+              bottomRight: Radius.circular(40),
+            ),
+            child: Image.network(
+              'https://clv.h-cdn.co/assets/15/22/2048x2048/square-1432664914-strawberry-facts1.jpg',
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                const Expanded(
+                  child: Text(
+                    'Strawberry',
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
+                  ),
+                ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(18),
+                  child: const Card(
+                    margin: EdgeInsets.zero,
+                    elevation: 0,
+                    color: Colors.orange,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                      child: Text(
+                        '\$50',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                'Fresas frescas y jugosas, perfectas para postres, batidos o para comer solas. Dulces, rojas y llenas de sabor.',
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Card(
+                    margin: EdgeInsets.zero,
+                    elevation: 0,
+                    color: Colors.orange.shade100,
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                      child: Text('100% Natural y orgánico'),
+                    ),
+                  ),
+                ),
+                const Padding(padding: EdgeInsets.only(right: 8)),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Card(
+                    margin: EdgeInsets.zero,
+                    elevation: 0,
+                    color: Colors.orange.shade100,
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                      child: Text('Envío gratis'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: FilledButton(
+                    style: FilledButton.styleFrom(backgroundColor: Colors.orange),
+                    onPressed: () {},
+                    child: const Padding(
+                      padding: EdgeInsets.all(16.0),
+                      child: Text(
+                        'Add to Cart',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ),
                   ),
                 ),
               ],
