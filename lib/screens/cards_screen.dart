@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/widgets/appBar.dart';
 
 class CardsScreen extends StatelessWidget {
   const CardsScreen({super.key});
@@ -6,9 +7,7 @@ class CardsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Cards'),
-      ),
+      appBar: CustomAppBar(title: 'Cards'),
       body: const SingleChildScrollView(
         child: Column(
           children: [

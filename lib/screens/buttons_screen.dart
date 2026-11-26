@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/widgets/appBar.dart';
 import 'package:flutter_widget/theme/app_colors.dart';
 
 class ButtonsScreen extends StatelessWidget {
@@ -10,9 +11,7 @@ class ButtonsScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(onPressed: (){
         Navigator.pop(context);
       },child: Icon(Icons.arrow_back) ),
-      appBar: AppBar(
-        title: const Text('Buttons'),
-      ),
+      appBar: CustomAppBar(title: 'Buttons'),
       body:Center(
         child: Column(        
           mainAxisAlignment: MainAxisAlignment.center,

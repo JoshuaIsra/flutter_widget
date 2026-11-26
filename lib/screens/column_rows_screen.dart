@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/widgets/appBar.dart';
 
 class ColumnRowsScreen extends StatelessWidget {
   const ColumnRowsScreen({super.key});
@@ -19,9 +20,7 @@ class ColumnRowsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Columns & Rows'),
-      ),
+      appBar: CustomAppBar(title: 'Columns & Rows'),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

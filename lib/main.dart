@@ -3,6 +3,10 @@ import 'package:flutter_widget/app_routes.dart';
 import 'package:flutter_widget/screens/buttons_screen.dart';
 import 'package:flutter_widget/screens/cards_screen.dart';
 import 'package:flutter_widget/screens/column_rows_screen.dart';
+import 'package:flutter_widget/screens/dialogs_screen.dart';
+import 'package:flutter_widget/screens/Forms_screen.dart';
+import 'package:flutter_widget/screens/Grid_screen.dart';
+import 'package:flutter_widget/screens/grid_screen2.dart';
 import 'package:flutter_widget/screens/home_screen.dart';
 import 'package:flutter_widget/theme/app_theme.dart';
 
@@ -25,6 +29,10 @@ class MainApp extends StatelessWidget {
         '/buttons':(context) => ButtonsScreen(),
         '/cards':(context) => CardsScreen(),
         '/column_rows':(context) => ColumnRowsScreen(),
+        '/forms':(context) => FormsScreen(),
+        '/grid':(context) => GridScreen(),
+        '/grid2':(context) => GridScreen2(),
+        '/dialogs':(context) => DialogsScreen(),
       }
     );
   }

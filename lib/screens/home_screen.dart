@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/widgets/appBar.dart';
 import 'package:flutter_widget/app_routes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,10 +10,7 @@ class HomeScreen extends StatelessWidget {
     final menu = Routes.menu;
 
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('HOMME'),
-      ),
+      appBar: CustomAppBar(title: 'HOMME'),
       body: ListView.builder(
         itemCount: menu.length,
         itemBuilder: (context, index) {
